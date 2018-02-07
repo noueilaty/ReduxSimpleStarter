@@ -1,25 +1,12 @@
 # ReduxSimpleStarter
+## A YouTube Replica built with React and Redux
+This project was built as part of the Udemy course: _Modern React with Redux_
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+###### Technologies Used:
+* React
+* Redux
+* Babel
+* Webpack
 
-### Getting Started
-
-There are two methods for getting started with this repo.
-
-#### Familiar with Git?
-Checkout this repo, install dependencies, then start the gulp process with the following:
-
-```
-> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
-> cd ReduxSimpleStarter
-> npm install
-> npm start
-```
-
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
-> npm install
-> npm start
-```
+### Project Mockup:
+![project-mockup](youtube-component-mockup.png)
