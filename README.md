@@ -9,4 +9,4 @@ This project was built as part of the Udemy course: _Modern React with Redux_
 * Webpack
 
 ### Project Mockup:
-![project-mockup](youtube-component-mockup.png)
+![project-mockup](youtube-component-structure.png)
