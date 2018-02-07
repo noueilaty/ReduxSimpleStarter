@@ -1,13 +1,17 @@
-require('dotenv').config();
 import React from 'react';
 import ReactDOM from 'react-dom';
 import SearchBar from './components/search_bar';
+// require('dotenv').config();
 
-const API_KEY = process.env.API_KEY;
+const API_KEY = 'AIzaSyC-53-ErDf0dmoWm4GjR5PzoG1WQNSDW28';
 
 // Create a new component. This component should produce some HTML
 const App = () => {
-    return <div>Hi!</div>;
+  return (
+    <div>
+      <SearchBar />
+    </div>
+  );
 }
 
 // Take this component's generated HTML and put it on the page (in the DOM)
