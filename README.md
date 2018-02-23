@@ -21,9 +21,10 @@ This project was developed to learn React and Redux. I incorporated a YouTube AP
 - User should be able to click on one of the thumbnails, changing the main video being displayed.
 
 ### Project Mockup:
-![project-mockup](youtube-component-structure.png)
 A basic mockup of the YouTube clone. 
+![project-mockup](youtube-component-structure.png)
 
 ### YouTube Replica
-![project-completed](youtube-mockup-completed.png)
 Functionality and basic styling of the YouTube clone completed.
+![project-completed](youtube-mockup-completed.png)
+
