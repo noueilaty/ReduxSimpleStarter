@@ -1,18 +1,43 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import YTSearch from 'youtube-api-search';
 import SearchBar from './components/search_bar';
-// require('dotenv').config();
+import VideoList from './components/video_list';
+import VideoDetail from './components/video_detail';
+const API_KEY = '';
 
-const API_KEY = 'AIzaSyC-53-ErDf0dmoWm4GjR5PzoG1WQNSDW28';
+class App extends Component {
+  constructor(props) {
+    super(props);
 
-// Create a new component. This component should produce some HTML
-const App = () => {
-  return (
-    <div>
-      <SearchBar />
-    </div>
-  );
+    this.state = { 
+      videos: [],
+      selectedVideo: null
+    };
+
+    this.videoSearch('cats')
+  }
+
+  videoSearch(term) {
+    YTSearch({ key: API_KEY, term: term }, (videos) => {
+      this.setState({
+        videos: videos,
+        selectedVideo: videos[0]
+      });
+    });
+  }
+  
+  render() {
+    return (
+      <div>
+        <SearchBar onSearchTermChange={term => this.videoSearch(term)} />
+        <VideoDetail video={this.state.selectedVideo}/>
+        <VideoList 
+          onVideoSelect={selectedVideo => this.setState({selectedVideo})}
+          videos={this.state.videos} />
+      </div>
+    )
+  }
 }
 
-// Take this component's generated HTML and put it on the page (in the DOM)
 ReactDOM.render(<App />, document.querySelector('.container'));
