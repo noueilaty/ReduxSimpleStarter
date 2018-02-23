@@ -1,4 +1,4 @@
-# A YouTube Replica built with React and Redux
+# A YouTube Clone built with React and Redux
 
 ###### Technologies Used:
 * React
@@ -20,8 +20,8 @@
 
 ### Project Mockup:
 ![project-mockup](youtube-component-structure.png)
-A basic mockup of the YouTube replica mockup. 
+A basic mockup of the YouTube clone. 
 
 ### YouTube Replica
 ![project-completed](youtube-mockup-completed.png)
-Functionality and basic styling of the YouTube replica completed.
+Functionality and basic styling of the YouTube clone completed.
