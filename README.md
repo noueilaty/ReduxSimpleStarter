@@ -1,4 +1,6 @@
 # A YouTube Clone built with React and Redux
+This project was developed to learn React and Redux. I incorporated a YouTube API to search YouTube for the users intended searches. The search terms return the first five videos from YouTube, with the main video defaulting to the first of the search results.
+
 
 ###### Technologies Used:
 * React
